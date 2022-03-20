@@ -200,7 +200,21 @@ function init() {
     camera.position.set(1, -1, 1) // like perspective view
 
     // very light grey for background, like rhino
-    scene.background = new THREE.Color(0,0,0)
+    //scene.background = new THREE.Color(0,0,0)
+    scene.background = new THREE.CubeTextureLoader()
+	  .setPath( './cubemap/' )
+	  .load( [
+		'px.png',
+		'nx.png',
+		'py.png',
+		'ny.png',
+		'pz.png',
+		'nz.png'
+	] );
+ // cubeMap = new THREE.CubeTextureLoader()
+ //
+ //      .setPath('textures/cube/Bridge2/')
+ //       .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] )
 
     // create the renderer and add it to the html
     renderer = new THREE.WebGLRenderer({ antialias: true })
