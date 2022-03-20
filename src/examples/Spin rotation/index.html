@@ -68,6 +68,168 @@
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
             }
+
+             /* .radio-toolbar {
+                margin: 5px;
+            } */
+
+            /*hide circular radio buttons*/
+            .radio-toolbar input[type="radio"] {
+                display: none;
+            }
+
+            .radio-toolbar label {
+                display: inline-block;
+                background-color: #ddd;
+                padding: 5px 5px;
+                font-family: sans-serif, Arial;
+                font-size: 10px;
+                color: #000000;
+                border-radius: 8px;
+                width: 20%;
+                text-align: center;
+            }
+
+            .radio-toolbar label:hover {
+                background-color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+            
+            .radio-toolbar input[type="radio"]:checked + label {
+                background-color: rgb(255, 255, 0);
+                text-align: center;
+            }
+
+            /* BOXES LEGEND */
+            .legend { list-style: none; }
+            .legend li { float: left; margin-right: 10px; }
+            .legend span { border: 1px solid #ccc; float: left; width: 10px; height: 10px; margin: 2px; }
+            /* your colors */
+            .legend .temp1 { background-color: #00FFBB; }
+            .legend .temp2 { background-color: #FFD500; }
+            .legend .temp3 { background-color: #FF0000; }
+            .legend .ph5 { background-color: #ff0000; }
+            .legend .ph6 { background-color: #ffa500; }
+            .legend .ph7 { background-color: #ffffff; }
+            .legend .prot { background-color: #ff0000; }
+            .legend .oils { background-color: #00ff00; }
+            .legend .carbs { background-color: #ffff00; }
+            .legend .flavour { background-color: #ff9600; }
+            .legend .water { background-color: #0000ff; }
+            .legend .health { background-color: #ff00ff; }
+            
+            /* GRADIENT LEGEND */
+            #gradient-roots {
+            height: 5px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid white;
+            background: linear-gradient(to right, #006400, #90ee90, #7fffd4, #e6e6fa);
+            }
+            #gradient-water {
+            height: 5px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid white;
+            background: linear-gradient(to right, #ffffff, #000078);
+            }
+            #gradient-height {
+            height: 5px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid white;
+            background: linear-gradient(to right, #ffffff, #000000);
+            }
+
+            .indicator {
+                position: absolute;
+                top: 0;
+                left: 25px;
+            }
+            .indicator::before {
+                content: "";
+                position: absolute;
+                bottom: 0.6em;
+                left: -20px;
+                right: 0px;
+                width: 1em;
+                border-top: 1.5px solid rgb(0, 0, 0);
+            }
+            .scale {
+                position: relative;
+            }
+
+            /* CHECKBOX */
+             /* Customize the label (the container) */
+            .container {
+                display: block;
+                position: relative;
+                padding-top: 3px;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            /* Hide the browser's default checkbox */
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 30px;
+                background-color: #eee;
+                border-radius: 8px;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a blue background */
+            .container input:checked ~ .checkmark {
+                background-color: rgb(255, 255, 0);
+                border-radius: 8px;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .container input:checked ~ .checkmark:after {
+                display: block;
+            }
+            
+            /* Style the checkmark/indicator */
+            .container .checkmark:after {
+                left: 11px;
+                top: 0px;
+                width: 7px;
+                height: 15px;
+                border: solid rgb(0, 0, 0);
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
         </style>
     </head>
     <body>
