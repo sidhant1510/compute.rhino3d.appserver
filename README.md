@@ -1,34 +1,26 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/mcneel/compute.rhino3d.appserver/main?label=version&style=flat-square)
 ![node-current (scoped)](https://img.shields.io/badge/dynamic/json?label=node&query=engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmcneel%2Fcompute.rhino3d.appserver%2Fmain%2Fpackage.json&style=flat-square&color=dark-green)
 
-# Rhino Compute AppServer
-A node.js server acting as a bridge between client apps and private compute.rhino3d servers.
+# Spinning Rotation Force
+In this project we can see the magnetic field rotation effects. A field element is an algorithm that applies a force on a given point in space. We are going to use this force to change the position of certain points to obtain the result.
 
-This app is intended to host one or more custom grasshopper definitions and serve as the API that client applications can call to have definitions solved with modified input parameters.
+Using the certain parameters we can see its different variations or behaviors resulting in smooth magnetic effect .The parameters are as follows:
 
-## Features
-- **Easy to get started**: fork/clone this repo and run it locally for testing or push to a service like Heroku for a production web server
-- **Easy to customize**: fork this repo, place your custom grasshopper definitions in the files directory and you now have a custom AppServer for your definitions.
-- **Caching**: Assuming definitions produce the same results when the same set of inputs are provided, the appserver caches all results in memory for faster response times.
-- **Timings**: Server-timing headers are returned to the client to help diagnose bottlenecks in the definition solving process.
+Gap:Using this parameter we can control the distance between the circles .
 
-## Getting Started
-1. Fork this repo
-2. Follow the [installation guide](docs/installation.md) to test and debug on your computer
-3. Follow the [Heroku hosting guide](docs/heroku.md) to push your customized AppServer to Heroku for a production web server
+Center : Using this parameters we can increase or decrease the number of circles .minimum and maximum value lies between 1-5.
 
-## How and What Video
-- A workshop on using the appserver can be found at https://vimeo.com/442079095 - also [slides](https://docs.google.com/presentation/d/1nCbd87iA_D2ZCwoSirOYK3har6XUJHDUEIkt635btUU)
-- AECTECH 2020 workshop: https://youtu.be/At4BaIuEE3c - [slides](https://docs.google.com/presentation/d/1uY6DcYpBNrgxk8sbHHv1gy3IZWRmO7QF1rUT1XOl3s0/edit?usp=drivesdk)
+Boundary : it’s shows the footprint or boundary base of the geometry.
 
-## Example
-When we have our testing server up and running, you can visit
+Radius : using this slider we can control the radius of the circles.
 
-https://compute-rhino3d-appserver.herokuapp.com/examples/
+Count : Using this slider we can increase or decrease the number of wings.
 
-To see a sample web application that passes three numbers based on slider positions to the AppServer for solving a grasshopper definition. Results are returned to the web page and new mesh visualizations are created.
+Expand :This slider give us the opportunity to maximum Or minimize the gap between boundary edge and the geometry.
 
-----
-## Other Information
-- [API Endpoints](docs/endpoints.md) the server supports
-- [Client Code](docs/clientcode.md) example for calling the AppServer
+Decay :using this slider we can control the interference of the pattern.
+
+Many researcher are using this technique to get an idea using magnetic field to generate some direction and rotate curves depending on distance or magnetic field.
+
+
+## plugin:No
