@@ -6,6 +6,8 @@ In this project we can see the magnetic field rotation effects. A field element 
 
 Using the certain parameters we can see its different variations or behaviors resulting in smooth magnetic effect .The parameters are as follows:
 
+# Parameters
+
 Gap:Using this parameter we can control the distance between the circles .
 
 Center : Using this parameters we can increase or decrease the number of circles .minimum and maximum value lies between 1-5.
