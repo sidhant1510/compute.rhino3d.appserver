@@ -25,4 +25,4 @@ Decay :using this slider we can control the interference of the pattern.
 Many researcher are using this technique to get an idea using magnetic field to generate some direction and rotate curves depending on distance or magnetic field.
 
 
-## plugin:No
+# Plugin:No
